@@ -40,7 +40,6 @@ export default {
           }
         }
       }
-      console.log(stack);
       if (stack.length === 0) return true;
       return false;
     },
