@@ -1,9 +1,12 @@
 <script setup>
-import TheWelcome from '../components/TheWelcome.vue'
+import Wizard from "@/components/Wizard.vue";
+import { ref } from "vue";
+
+const step = ref(0);
 </script>
 
 <template>
-  <main>
-    <TheWelcome />
-  </main>
+  <Wizard v-model:step="step" />
 </template>
+
+<style scoped lang="scss"></style>
